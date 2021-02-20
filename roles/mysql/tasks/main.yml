@@ -1,6 +1,6 @@
 - name: Install MySQL Packages
   yum: name={{ item }} update_cache=yes state=latest
-  loop: [ 'mariadb-server', 'php-mysqlnd' ]
+  loop: [ 'mariadb-server', 'python-mysqldb' ]
 
 - name: Start mysqld service
   systemd: name=mariadb state=started enabled=yes
