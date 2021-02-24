@@ -1,5 +1,5 @@
 - name: Install PHP Remi Repository
-  yum: name=http://rpms.remirepo.net/enterprise/remi-release-8.rpm update_cache=yes state=latest
+  yum: name=http://rpms.remirepo.net/enterprise/remi-release-7.rpm update_cache=yes state=latest
  
 - name: Enable PHP Remi Repository 1
   command: dnf module reset php -y
