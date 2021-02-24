@@ -3,7 +3,7 @@
   loop: [ 'mariadb-server', 'python-mysqldb' ]
 
 - name: Start mysqld service
-  systemd: name=mariadb state=started enabled=yes
+  systemd: name=mysql state=started enabled=yes
 
 - name: Set MySQL root Password
   mysql_user:
